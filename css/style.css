@@ -22,6 +22,33 @@ img{
 h4{
     color: white;
 }
+
+/* UPGRADE BAR */
+.upgrade{
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 75.97px;
+    width: calc( 100% - 200px );
+    text-align: right;
+    text-transform: uppercase;
+    padding-right: 5px;
+}
+
+.upgrade_button{
+    font-size: 10px;
+    line-height: 75.97px;
+    border: 1px solid white;
+    padding: 10px 40px;
+    border-radius: 100px;
+}
+
+.upgrade_button:hover{
+    padding: 15px 50px;
+}
+
 /* MAIN */
 main{
     height: calc( 100% - 100px );
@@ -78,9 +105,24 @@ li:hover{
     flex-grow: 1;
 }
 
+.plus_button{
+    display: inline-block;
+    color:black;
+    font-size: 30px;
+    border: 1px solid #656565;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    background-color: #656565;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+
 .library_links h4,
-.library_links span{
+.library_links div{
     padding-left: 20px;
+    padding-top: 5px;
 }
 
 .library_links ul{
@@ -133,11 +175,56 @@ li:hover{
 footer{
     height: 100px;
     overflow: hidden;
+    color: white;
+    
 
 
 
     /* TEST */
     background-color: lightgreen;
+}
+
+.music_bar{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.alt{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+/*song*/
+.song{
+
+}
+
+.song img{
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.song div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* .song p{
+    display: inline-block;
+} */
+
+/*timer*/
+.timer{
+
+}
+
+/*volume*/
+.volume{
+
 }
 /* FINE FOOTER */
 
@@ -148,6 +235,7 @@ footer{
         width: 50px;
     }
 
+    .library_links div,
     .library_links h4,
     .main_left a,
     .end_links span,
@@ -177,16 +265,22 @@ footer{
         width: calc( 100% - 50px ); 
     }
     /* FINE MAIN RIGHT */
+
+    .upgrade{
+        width: calc( 100% - 50px ); 
+    }
 }
 
-@media all and (min-width: 768px){
+@media all and (min-width: 768px)
+and (max-width: 991px) {
 
 }
 
-@media all and (min-width: 992px){
+@media all and (min-width: 992px)
+and (max-width: 1199px) {
 
 }
 
-@media all and (min-width: 1200px){
+@media all and (min-width: 1200px) {
 
 }
