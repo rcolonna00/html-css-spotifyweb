@@ -5,37 +5,22 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* COMMON */
 #app-wrapper{
     width: 100%;
     height: 100vh;
-
-
-
-    /* test */
-    background-color: cadetblue;
 }
 
 img{
     width: 100%;
 }
 
+h4{
+    color: white;
+}
 /* MAIN */
 main{
     height: calc( 100% - 100px );
-    color: #656565;
-
-
-
-    /* TEST */
-    background-color: chocolate;
-}
-
-main li{
-    list-style-type: none;
-}
-
-main a{
-    text-decoration: none;
     color: #656565;
 }
 
@@ -45,37 +30,53 @@ main a{
     height: 100%;
     width: 200px;
     overflow: hidden;
-    padding: 10px 20px;
     display: flex;
     flex-direction: column;
-
-
-    /* TEST */
-    background-color: gold;
+    background-color: black;
+    font-size: 11px;
 }
 
+.main_left li{
+    list-style-type: none;
+    padding: 5px 20px;
+}
+
+.main_left a{
+    text-decoration: none;
+    color: #656565;
+}
+
+a:hover{
+    color: #d2d2d2;
+}
+
+li:hover{
+    border-left: 3px solid lime;
+}
+/* logo */
 .logo{
-    width: 100px;
+    width: 150px;
     height: auto;
+    padding: 20px 20px;
 }
 
-.main_links{
-
-
-
-    /* test */
-    background-color: indigo;
+/* main links*/
+.main_links img{
+    width: auto;
+    height: 20px;
+    vertical-align: middle;
 }
 
+/* library links */
 .library_links{
-    flex-grow: 1;
     min-height: 100px;
     overflow: hidden;
+    flex-grow: 1;
+}
 
-    
-
-    /* test */
-    background-color: blue;
+.library_links h4,
+.library_links span{
+    padding-left: 20px;
 }
 
 .library_links ul{
@@ -83,12 +84,31 @@ main a{
     overflow-y: auto;
 }
 
+/* end links */
 .end_links{
-
-
-    /* test */
-    background-color: red;
+    padding: 10px 20px;
 }
+.end_links div{
+    border-bottom: 1px solid  #656565;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.download{
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.profile{
+    height: 25px;
+    width: auto;
+    border: 1px solid #656565;
+    background-color:  #656565;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
 /* FINE MAIN LEFT*/
 
 /* MAIN RIGHT*/
@@ -100,7 +120,7 @@ main a{
 
 
     /* TEST */
-    background-color: green;
+    background-color: lightblue;
 }
 /* FINE MAIN RIGHT*/
 /* FINE MAIN */
