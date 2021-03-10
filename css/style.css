@@ -15,6 +15,10 @@ img{
     width: 100%;
 }
 
+.displ_none{
+    display: none;
+}
+
 h4{
     color: white;
 }
@@ -54,7 +58,7 @@ li:hover{
     border-left: 3px solid lime;
 }
 /* logo */
-.logo{
+.logo_normal{
     width: 150px;
     height: auto;
     padding: 20px 20px;
@@ -136,3 +140,53 @@ footer{
     background-color: lightgreen;
 }
 /* FINE FOOTER */
+
+@media all and (max-width: 767px){
+
+    /* MAIN LEFT */
+    .main_left{
+        width: 50px;
+    }
+
+    .library_links h4,
+    .main_left a,
+    .end_links span,
+    .logo_normal{
+        display: none;
+    }
+
+    .logo_small{
+        display: block;
+        height: 30px;
+        width: auto;
+        margin: 10px;
+    }
+
+    .end_links div{
+        border-bottom: 0px;
+    }
+
+    .main_left li,
+    .end_links{
+        padding: 25%;
+    }
+    /* FINE MAIN LEFT */
+
+    /* MAIN RIGHT */
+    .main_right{
+        width: calc( 100% - 50px ); 
+    }
+    /* FINE MAIN RIGHT */
+}
+
+@media all and (min-width: 768px){
+
+}
+
+@media all and (min-width: 992px){
+
+}
+
+@media all and (min-width: 1200px){
+
+}
