@@ -77,11 +77,11 @@ main{
     color: #656565;
 }
 
-a:hover{
+.main_left a:hover{
     color: #d2d2d2;
 }
 
-li:hover{
+.main_left li:hover{
     border-left: 3px solid lime;
 }
 /* logo */
@@ -199,9 +199,8 @@ footer{
 }
 
 /*song*/
-.song{
-    width: 230px;
-    min-width: 176.98px;
+.song .padding_left{
+    padding-left: 5px;
 }
 
 .song img{
@@ -216,10 +215,6 @@ footer{
     justify-content: space-around;
 }
 
-.heart_archive{
-    padding-left: 10%;
-}
-
 .song .heart_archive i{
     color: #656565;
 }
@@ -229,6 +224,7 @@ footer{
 
 .song a{
     color: #656565;
+    font-size: 12px;
 }
 
 .song a:hover{
@@ -238,13 +234,80 @@ footer{
 
 /*timer*/
 .timer{
-
+    min-width: 50%;
 }
+/*tasti*/
+.tasti{
+    margin: auto;
+    width: 50%;
+}
+
+.timer ul{
+    margin: auto;
+    max-width: 350px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.timer li{
+    list-style: none;
+}
+
+.timer li a{
+    text-decoration: none;
+    color: white;
+}
+/*fine timer*/
 
 /*volume*/
 .volume{
-
+    display: flex;
+    align-items: center;
 }
+
+.volume a{
+    color: white;
+    font-size: 12px;
+}
+
+.volume i{
+    padding-right: 10px;
+}
+
+.volume .barra_volume_intera{
+    width: 100px;
+    background-color: #5a5a5a;
+    height: 5px;
+    position: relative; 
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.volume .barra_volume_pezzo{
+    background-color: #c1c1c1;
+    height: 5px;
+    width: 35px;
+    border-radius: 5px;
+}
+
+.pallino_barra{
+    width: 10px;
+    height: 10px;
+    margin-left: 33px;
+    position: absolute;
+    bottom: -2px;
+    border-radius: 50%;
+}
+
+.volume .barra_volume_pezzo:hover{
+    background-color: lime;
+}
+
+.barra_volume_intera:hover .pallino_barra{
+    background:white;
+}
+
 /* FINE FOOTER */
 
 @media all and (max-width: 767px){
