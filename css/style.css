@@ -217,7 +217,33 @@ main li{
     background-color: lime;
     border-color: lime;
 }
-/* FINE MAIN RIGHT*/
+/* fine category */
+
+/* recently played */
+.box_music{
+    display: flex;
+    padding: 0 15px;
+}
+
+#recently_played h2{
+    color: white;
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.single_music{
+    text-align: center;
+    width: 150px;
+}
+
+.box_img_music{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* fine recently played */
+
+/* FINE MAIN RIGHT */
 /* FINE MAIN */
 
 /* FOOTER */
