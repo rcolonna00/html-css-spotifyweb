@@ -78,11 +78,20 @@ main{
 }
 
 .main_left a:hover{
-    color: #d2d2d2;
+    color: white;
 }
 
-.main_left li:hover{
+.main_left a:hover .plus_button{
+    background-color: white;
+}
+
+.main_left li:hover {
     border-left: 3px solid lime;
+    color: white;
+}
+
+.main_left li:hover a{
+    color: white;
 }
 /* logo */
 .logo_normal{
@@ -176,12 +185,7 @@ footer{
     height: 100px;
     overflow: hidden;
     color: white;
-    
-
-
-
-    /* TEST */
-    background-color: lightgreen;
+    background-color: #282828;
 }
 
 .music_bar{
@@ -189,13 +193,6 @@ footer{
     justify-content: space-between;
     height: 100%;
     align-items: center;
-}
-
-/* test */
-.alt{
-    width: 50px;
-    height: 50px;
-    background-color: red;
 }
 
 /*song*/
@@ -240,6 +237,7 @@ footer{
 .tasti{
     margin: auto;
     width: 50%;
+    padding-bottom: 20px;
 }
 
 .timer ul{
@@ -248,6 +246,7 @@ footer{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .timer li{
@@ -257,6 +256,59 @@ footer{
 .timer li a{
     text-decoration: none;
     color: white;
+}
+
+.play{
+    font-size: 30px;
+}
+
+.play:hover{
+    font-size: 35px;
+}
+/* barra tempo */
+.barra_tempo{
+    max-width: 680px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barra_tempo span{
+    padding: 0 8px;
+}
+
+.barra_tempo .barra_tempo_intera{
+    width: 500px;
+    background-color: #5a5a5a;
+    height: 5px;
+    position: relative; 
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.barra_tempo .barra_tempo_pezzo{
+    background-color: #c1c1c1;
+    height: 5px;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.pallino_barra{
+    width: 10px;
+    height: 10px;
+    margin-left: 29%;
+    position: absolute;
+    bottom: -2px;
+    border-radius: 50%;
+}
+
+.barra_tempo_intera:hover .barra_tempo_pezzo{
+    background-color: lime;
+}
+
+.barra_tempo_intera:hover .pallino_barra{
+    background:white;
 }
 /*fine timer*/
 
@@ -287,20 +339,20 @@ footer{
 .volume .barra_volume_pezzo{
     background-color: #c1c1c1;
     height: 5px;
-    width: 35px;
+    width: 30%;
     border-radius: 5px;
 }
 
 .pallino_barra{
     width: 10px;
     height: 10px;
-    margin-left: 33px;
+    margin-left: 29%;
     position: absolute;
     bottom: -2px;
     border-radius: 50%;
 }
 
-.volume .barra_volume_pezzo:hover{
+.barra_volume_intera:hover .barra_volume_pezzo{
     background-color: lime;
 }
 
