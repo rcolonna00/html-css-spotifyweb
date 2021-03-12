@@ -219,16 +219,31 @@ main li{
 }
 /* fine category */
 
-/* recently played */
-#recently_played h2{
+/*section common*/
+.section{
+    padding: 0 20px 20px 20px;
+}
+
+.section .section_title{
     color: white;
-    font-size: 30px;
-    padding-bottom: 25px;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.section p{
+    color: white;
+    font-size: 12px;
+    padding-top: 8px;
+    color: #6d7075;
 }
 
 .box_music{
     display: flex;
-    padding: 0 10px;
+    flex-wrap: wrap;
+}
+
+.box_img_music{
+    padding-bottom: 10px;
 }
 
 .box_music p{
@@ -239,14 +254,14 @@ main li{
 .single_music{
     text-align: center;
     width: 150px;
-    margin: 0 10px;
+    margin-right: 20px;
 }
 
 .background_single_music{  
     position: relative;
 }
 
-#recently_played img{
+.section img{
     position: absolute;
     left: 0;
 }
@@ -262,17 +277,21 @@ main li{
     top: 0;
 }
 
-#recently_played .background_single_music:hover img{
+.section .background_single_music:hover img{
     position:static;
 }
 
-#recently_played i{
+.section i{
 line-height: 150px;
 color: white;
 font-size: 35px;
 z-index: 1;
 }
-/* fine recently played */
+
+.circle{
+    border-radius: 50%;
+}
+/* fine section common */
 
 /* FINE MAIN RIGHT */
 /* FINE MAIN */
